@@ -24,10 +24,14 @@ window.onload = function() {
 
     var sellingPoints = document.getElementsByClassName('info')[0];
     var scrollDistance = sellingPoints.getBoundingClientRect().top - window.innerHeight + 200;
+    var downArrow = document.querySelector('.arrow-icon');
 
     window.addEventListener('scroll', function(event) {
         if (document.documentElement.scrollTop || document.body.scrollTop >= scrollDistance) {
             animatePoints(pointsArray);   
         }
     });
+    
+    smoothScroll.init();
+
 }  
