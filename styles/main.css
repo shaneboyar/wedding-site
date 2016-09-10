@@ -36,10 +36,23 @@ nav {
 	background-size: cover;
 }
 
+.hero:after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .hero .headline {
 	font-family: 'Brixton';
     position: absolute;             /* positioning will be explained in a resource */
     top: 33%;                       /* positioning will be explained in a resource */
+    z-index: 2;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -55,6 +68,7 @@ nav {
 .hero .date {
 	position: absolute;
 	top: 50%;
+	z-index: 2;
 	-webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
