@@ -148,12 +148,26 @@ nav {
 }
 
 .faq {
-	position: relative;
+	position: relative; /* positioning will be explained in a resource */
+	min-height: 800px;  /* hero content element must be _at least_ 600 pixels */
 	background-image: url(../assets/images/upfeathers.png);
 	background-repeat: repeat;
-	background-position: center center;
-	min-height: 850px;
-	padding-top: 25px;
+	color: #000000;
+}
+
+.faq .headline {
+	font-family: 'Brixton';
+    position: absolute;             /* positioning will be explained in a resource */
+    top: 10%;                       /* positioning will be explained in a resource */
+    z-index: 2;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;                    /* makes sure the title inhabits the full width of its container */
+    text-align: center;             /* aligns text in the horizontal center of the element */
+    font-size: 4rem;                /* specifies the size of the font in root em units */
+    font-weight: 700;               /* makes the font thinner or lighter weight */
 }
 
 .rsvp {
