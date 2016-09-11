@@ -45,7 +45,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hero .headline {
@@ -147,6 +147,36 @@ nav {
 	font-weight: 500;
 }
 
+.faq {
+	position: relative;
+	background-image: url(../assets/images/upfeathers.png);
+	background-repeat: repeat;
+	background-position: center center;
+	min-height: 850px;
+	padding-top: 25px;
+}
+
+.rsvp {
+	position: relative;
+	background-image: url(../assets/images/gallow-green2.jpg);
+	background-repeat: repeat;
+	background-position: center center;
+	min-height: 350px;
+	padding-top: 25px;
+}
+
+.rsvp:after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
 /* Medium and small screens (640px) */
 @media (min-width: 640px) {
     html { font-size: 112%; }
@@ -173,5 +203,4 @@ nav {
 .clearfix::before,
 .clearfix::after {
     content: " ";
-    display: table;
 }
