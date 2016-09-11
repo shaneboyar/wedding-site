@@ -164,7 +164,7 @@ nav {
 
 .faq {
 	position: relative; /* positioning will be explained in a resource */
-	min-height: 2000px;  /* hero content element must be _at least_ 600 pixels */
+	min-height: 1800px;  /* hero content element must be _at least_ 600 pixels */
 	background-image: url(../assets/images/upfeathers.png);
 	background-repeat: repeat;
 	color: #000000;
@@ -194,10 +194,15 @@ nav {
 .faq .faq-list .faq-item {
 	list-style: none;
 	position: relative;
-	height: 300px;
+	height: 250px;
 	width: 750px;
 	margin: 0 auto 5% auto;
+	padding-top: 14.5px;
 	background-color: rgba(255,255,255,0.8);
+}
+
+.faq .faq-list .faq-item .faq-icon {
+	padding-top: 5px;
 }
 
 .rsvp {
