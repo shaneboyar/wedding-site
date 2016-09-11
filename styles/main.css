@@ -116,6 +116,10 @@ nav {
 	padding-top: 25px;
 }
 
+.info img{
+	width: 150px;
+}
+
 .info-item {
 	position: relative;
     padding: 2rem;
@@ -143,8 +147,20 @@ nav {
 	margin-bottom: .5rem;
 }
 
-.info-item .info-button {
+.info-item .text {
+	font-family: 'Amatic SC';
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	margin-bottom: .5rem;
+}
+
+.info-item .info-button a {
+	font-size: 1rem;
 	font-weight: 500;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 4px solid white;
+	padding: 10px;
 }
 
 .faq {
@@ -198,6 +214,13 @@ footer {
 	background-position: center center;
 	min-height: 100px;
 	padding-top: 25px;
+}
+
+footer .closing {
+	font-family: 'Brixton';
+    width: 100%;                    /* makes sure the title inhabits the full width of its container */
+    text-align: center;             /* aligns text in the horizontal center of the element */
+    font-size: 1rem;                /* specifies the size of the font in root em units */
 }
 
 /* Medium and small screens (640px) */
