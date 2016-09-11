@@ -156,7 +156,6 @@ nav {
 
 .info-item .info-button a {
 	font-size: 1rem;
-	font-weight: 500;
 	color: #FFFFFF;
 	text-decoration: none;
 	border: 4px solid white;
@@ -165,7 +164,7 @@ nav {
 
 .faq {
 	position: relative; /* positioning will be explained in a resource */
-	min-height: 800px;  /* hero content element must be _at least_ 600 pixels */
+	min-height: 2000px;  /* hero content element must be _at least_ 600 pixels */
 	background-image: url(../assets/images/upfeathers.png);
 	background-repeat: repeat;
 	color: #000000;
@@ -174,7 +173,7 @@ nav {
 .faq .headline {
 	font-family: 'Brixton';
     position: absolute;             /* positioning will be explained in a resource */
-    top: 10%;                       /* positioning will be explained in a resource */
+    top: 5%;                       /* positioning will be explained in a resource */
     z-index: 2;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -184,6 +183,21 @@ nav {
     text-align: center;             /* aligns text in the horizontal center of the element */
     font-size: 4rem;                /* specifies the size of the font in root em units */
     font-weight: 700;               /* makes the font thinner or lighter weight */
+}
+
+.faq .faq-list {
+	position: absolute;
+	width: 100%;
+	top: 10%;
+}
+
+.faq .faq-list .faq-item {
+	list-style: none;
+	position: relative;
+	height: 300px;
+	width: 750px;
+	margin: 0 auto 5% auto;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .rsvp {

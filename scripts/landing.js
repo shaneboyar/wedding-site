@@ -15,6 +15,10 @@ var animatePoints = function(points) {
 
 };
 
+var faqarray = document.getElementsByClassName('faq-item');
+
+
+
 window.onload = function() {
 
     // Automatically animate the points on a tall screen where scrolling can't trigger the animation
@@ -24,13 +28,25 @@ window.onload = function() {
 
     var sellingPoints = document.getElementsByClassName('info')[0];
     var scrollDistance = sellingPoints.getBoundingClientRect().top - window.innerHeight + 200;
-    var downArrow = document.querySelector('.arrow-icon');
 
     window.addEventListener('scroll', function(event) {
         if (document.documentElement.scrollTop || document.body.scrollTop >= scrollDistance) {
             animatePoints(pointsArray);   
         }
     });
+
+    window.sr = ScrollReveal({ 
+        origin: 'left',
+        distance: '200%',
+        duration: 1000,
+    });
+
+    window.sr = ScrollReveal();
+    sr.reveal('.faq-item-1');
+    sr.reveal('.faq-item-2');
+    sr.reveal('.faq-item-3');
+    sr.reveal('.faq-item-4');
+    sr.reveal('.faq-item-5');
     
     smoothScroll.init();
 
