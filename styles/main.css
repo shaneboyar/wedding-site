@@ -90,13 +90,13 @@ nav {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%;                    /* makes sure the title inhabits the full width of its container */
-    text-align: center;             /* aligns text in the horizontal center of the element */
-    font-size: 2rem;                /* specifies the size of the font in root em units */
-    font-weight: 300;               /* makes the font thinner or lighter weight */
-    text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
-    letter-spacing: 0.5rem;         /* puts 0.5 root ems worth of space between each letter */
-    text-shadow: 1px 1px 0px rgb(58,23,63); /* creates a shadow underneath the text for readability over the image */
+    width: 100%;                   
+    text-align: center;            
+    font-size: 2rem;                
+    font-weight: 300;               
+    text-transform: uppercase;      
+    letter-spacing: 0.5rem;         
+    text-shadow: 1px 1px 0px rgb(58,23,63); 
 }
 
 .hero .arrow-icon a {
@@ -159,7 +159,7 @@ nav {
 	color: #FFFFFF;
 	text-decoration: none;
 	border: 4px solid white;
-	padding: 10px;
+	padding: 20px;
 }
 
 .faq {
@@ -198,11 +198,21 @@ nav {
 	width: 750px;
 	margin: 0 auto 5% auto;
 	padding-top: 14.5px;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.6);
 }
 
 .faq .faq-list .faq-item .faq-icon {
 	padding-top: 5px;
+	width: 200px;
+	height: 200px;
+}
+
+.faq .faq-list .faq-item .faq-content .question {
+	text-align: center;
+}
+
+.faq .faq-list .faq-item .faq-content .answer {
+	margin-left: 10px;
 }
 
 .rsvp {

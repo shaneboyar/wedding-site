@@ -38,7 +38,8 @@ window.onload = function() {
     window.sr = ScrollReveal({ 
         origin: 'left',
         distance: '200%',
-        duration: 1000,
+        rotate: { z: 10 },
+        duration: 1000
     });
 
     window.sr = ScrollReveal();
