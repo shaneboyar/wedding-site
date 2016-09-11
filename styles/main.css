@@ -270,6 +270,10 @@ footer .closing {
     	display: none;
     }
 
+    .faq {
+    	display: none;
+    }
+
     .rsvp .rsvp-button {
     	display: block;
     	font-family: 'Brixton';
