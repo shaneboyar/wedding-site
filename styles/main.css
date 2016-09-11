@@ -165,16 +165,12 @@ nav {
 	padding-top: 25px;
 }
 
-.rsvp:after {
-  content: " ";
-  z-index: 1;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2);
+
+.rsvp .rsvp-form {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 760px;
 }
 
 /* Medium and small screens (640px) */
