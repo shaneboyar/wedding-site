@@ -267,6 +267,7 @@ footer .closing {
     .column.half { width: 50%; }
     .column.third { width: 33.3%; }
     .column.fourth { width: 25%; }
+    .column.three-quarters { width: 75%;}
     .column.flow-opposite { float: right; }
 }
 

@@ -1,0 +1,69 @@
+.venue {
+	position: relative;
+	background-image: url(../assets/images/upfeathers.png);
+	background-repeat: repeat;
+	background-position: center center;
+	min-height: 600px;
+	padding-top: 25px;
+	color: #000;
+}
+
+.venue .venue-image img {
+	position: relative;
+	width: 100%;
+}
+
+.venue .venue-info h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.venue .venue-info p {
+	margin: 0;
+	padding: 20px;
+}
+
+.lodging {
+	position: relative;
+	background-image: url(../assets/images/dark_embroidery.png);
+	background-repeat: repeat;
+	background-position: center center;
+	min-height: 500px;
+	padding-top: 25px;
+	color: #FFF;
+}
+
+.lodging .lodging-info h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.venue .venue-info p {
+	padding: 20px;
+}
+
+.lodging .lodging-image img {
+	position: relative;
+	width: 100%;
+}
+
+.etc {
+	position: relative;
+	background-image: url(../assets/images/upfeathers.png);
+	background-repeat: repeat;
+	background-position: center center;
+	min-height: 650px;
+	padding-top: 25px;
+}
+
+.etc .etc-item {
+	position: relative;
+    padding: 2rem;
+    text-align: center;
+}
+
+.etc .etc-item img {
+	width: 75%;
+}	
+
+

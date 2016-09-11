@@ -49,3 +49,13 @@
 .links-container .navbar-link:hover {
     color: rgb(21,37,23);
 }
+
+@media (max-width: 640px) {
+    .navbar .logo {
+        text-align: center;
+    }
+
+    .navbar .links-container {
+        display: none;
+    }
+}   
