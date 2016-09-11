@@ -161,7 +161,7 @@ nav {
 	background-image: url(../assets/images/gallow-green2.jpg);
 	background-repeat: repeat;
 	background-position: center center;
-	min-height: 350px;
+	min-height: 550px;
 	padding-top: 25px;
 }
 
@@ -171,6 +171,15 @@ nav {
 	position: relative;
 	margin: 0 auto;
 	width: 760px;
+}
+
+footer {
+	position: relative;
+	background-image: url(../assets/images/binding_dark.png);
+	background-repeat: repeat;
+	background-position: center center;
+	min-height: 100px;
+	padding-top: 25px;
 }
 
 /* Medium and small screens (640px) */
