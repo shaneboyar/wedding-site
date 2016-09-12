@@ -1,4 +1,6 @@
 var pointsArray = document.getElementsByClassName('info-item');
+var photosArray = document.getElementsByClassName('photo');
+var faqarray = document.getElementsByClassName('faq-item');
 
 var animatePoints = function(points) {
 
@@ -15,13 +17,9 @@ var animatePoints = function(points) {
 
 };
 
-var faqarray = document.getElementsByClassName('faq-item');
-
-
-
 window.onload = function() {
 
-    // Automatically animate the points on a tall screen where scrolling can't trigger the animation
+    // Info Points Animate Up on Scroll
      if (window.innerHeight > 950) {
         animatePoints(pointsArray);
     }
@@ -34,6 +32,7 @@ window.onload = function() {
             animatePoints(pointsArray);   
         }
     });
+    
 
     window.sr = ScrollReveal({ 
         origin: 'left',
@@ -41,8 +40,14 @@ window.onload = function() {
         rotate: { z: 10 },
         duration: 1000
     });
-
-    window.sr = ScrollReveal();
+    sr.reveal('[data-photo-number="1"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="2"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="3"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="4"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="5"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="6"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="7"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="8"]', {origin: 'bottom', viewFactor: 0.8});
     sr.reveal('.faq-item-1');
     sr.reveal('.faq-item-2');
     sr.reveal('.faq-item-3');
