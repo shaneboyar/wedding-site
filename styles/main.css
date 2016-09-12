@@ -19,8 +19,8 @@ body {
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
 }
 
-nav {
-
+section {
+  box-shadow: 0 -2px 10px rgba(0,0,0,.7);
 }
 
 .container {
