@@ -164,7 +164,7 @@ nav {
 
 .story {
   position: relative; /* positioning will be explained in a resource */
-  min-height: 2000px;  /* hero content element must be _at least_ 600 pixels */
+  min-height: 2500px;  /* hero content element must be _at least_ 600 pixels */
   background-image: url(../assets/images/upfeathers.png);
   background-repeat: repeat;
   background-attachment: fixed;
@@ -177,7 +177,7 @@ nav {
 }
 
 .story .person {
-  height: 1750px;
+  height: 2250px;
 }
 
 .story .person#shane {
@@ -187,7 +187,6 @@ nav {
 .story .person .photo {
   position: relative;
   width: 100%;
-  height: 400px;
   margin: 10px 0; 
   
 }
