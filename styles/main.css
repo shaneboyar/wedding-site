@@ -33,6 +33,7 @@ section {
 	background-image: url(../assets/images/nature-forest-trees-fog.jpeg);
 	background-repeat: no-repeat;
 	background-position: center center;
+  background-attachment: fixed;
 	background-size: cover;
 }
 
