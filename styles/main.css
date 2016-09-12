@@ -29,7 +29,7 @@ section {
 
 .hero {
 	position: relative; /* positioning will be explained in a resource */
-	min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+	min-height: 100vh;  /* hero content element must be _at least_ 600 pixels */
 	background-image: url(../assets/images/nature-forest-trees-fog.jpeg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -103,9 +103,37 @@ section {
 	color: white;
 }
 
+@keyframes bounce {
+  0% {-webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);}
+  50% {-webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);}
+  to {-webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);}
+}
+
+.hero .arrow-icon i{
+  animation-name: bounce;
+  animation-duration: 1.33s;
+    animation-timing-function: ease-in-out;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+/*
 .hero .arrow-icon i:hover {
 	margin-top: 5px;
 }
+*/
 
 .info {
 	position: relative;
