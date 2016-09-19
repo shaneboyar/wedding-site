@@ -97,11 +97,11 @@ section {
     font-weight: 300;               
     text-transform: uppercase;      
     letter-spacing: 0.5rem;         
-    text-shadow: 1px 1px 0px rgb(58,23,63); 
 }
 
 .hero .arrow-icon a {
 	color: white;
+  text-shadow: 4px 5px 5px rgb(21,37,23);
 }
 
 @keyframes bounce {
