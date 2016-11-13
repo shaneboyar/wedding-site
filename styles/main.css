@@ -252,6 +252,7 @@ section {
     text-align: center;             /* aligns text in the horizontal center of the element */
     font-size: 4rem;                /* specifies the size of the font in root em units */
     font-weight: 700;               /* makes the font thinner or lighter weight */
+    color: white;
 }
 
 .faq .faq-list {
@@ -270,10 +271,11 @@ section {
 	background-color: rgba(255,255,255,0.8);
 }
 
-.faq .faq-list .faq-item .faq-icon {
+.faq .faq-list .faq-item .faq-icon img {
 	padding-top: 5px;
 	width: 200px;
 	height: 200px;
+  object-fit: cover;
 }
 
 .faq .faq-list .faq-item .faq-content .question {
@@ -282,6 +284,8 @@ section {
 
 .faq .faq-list .faq-item .faq-content .answer {
 	margin-left: 10px;
+  font-family: 'Amatic SC';
+  font-size: 24px;
 }
 
 .rsvp {
@@ -346,6 +350,10 @@ footer .closing {
 }
 
 @media (max-width: 640px) {
+  .story {
+    display: none;
+  }
+
 	.rsvp .rsvp-form {
     	display: none;
     }
