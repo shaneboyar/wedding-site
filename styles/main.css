@@ -353,6 +353,7 @@ footer .closing {
 
   .hero {
     background-image: url(../assets/images/eng_pic_2.jpg);
+    background-position: center top;
   }
 
 
