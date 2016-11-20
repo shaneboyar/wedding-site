@@ -350,6 +350,12 @@ footer .closing {
 }
 
 @media (max-width: 640px) {
+
+  .hero {
+    background-image: url(../assets/images/eng_pic_2.jpg);
+  }
+
+
   .story {
     display: none;
   }
