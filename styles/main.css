@@ -30,7 +30,7 @@ section {
 .hero {
 	position: relative; /* positioning will be explained in a resource */
 	min-height: 100vh;  /* hero content element must be _at least_ 600 pixels */
-	background-image: url(../assets/images/nature-forest-trees-fog.jpeg);
+	background-image: url(../assets/images/eng_pic_1.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
   background-attachment: fixed;
