@@ -334,8 +334,6 @@ footer .closing {
   .hero {
     background-image: url(../assets/images/eng_pic_2.jpg);
     background-position: center top;
-    background-size: cover;
-    height: 575px !important;
   }
 
   .info {
