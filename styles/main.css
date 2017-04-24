@@ -335,7 +335,7 @@ footer .closing {
     background-image: url(../assets/images/eng_pic_2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
   }
 
   .info {
