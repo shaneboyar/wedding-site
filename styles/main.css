@@ -333,7 +333,9 @@ footer .closing {
 
   .hero {
     background-image: url(../assets/images/eng_pic_2.jpg);
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
   }
 
   .info {
