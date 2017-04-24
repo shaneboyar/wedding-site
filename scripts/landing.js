@@ -48,10 +48,6 @@ window.onload = function() {
     sr.reveal('[data-photo-number="6"]', {origin: 'bottom', viewFactor: 0.8});
     sr.reveal('[data-photo-number="7"]', {origin: 'bottom'});
     sr.reveal('[data-photo-number="8"]', {origin: 'bottom', viewFactor: 0.8});
-    sr.reveal('.faq-item-1');
-    sr.reveal('.faq-item-2');
-    sr.reveal('.faq-item-3');
-    sr.reveal('.faq-item-4');
     sr.reveal('.faq-item-5');
     
     smoothScroll.init();

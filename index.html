@@ -14,9 +14,9 @@
 			<h3 class="date">September 23<span>rd</th>, 2017</h3>
 			<h5 class="arrow-icon"><a data-scroll href="#info"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a></h5>
 		</section>
-		<section class="info container clearfix" id="info">
-			<div class="info-item column third">
-				<div class="info-image"><img src="assets/images/flowers.png"></div>
+		<section class="info" id="info">
+			<div class="info-item">
+				<img class="info-image" src="assets/images/flowers.png">
 				<h4 class="info-title">The Venue</h4>
 				<p class="text">Gallow Green is the rooftop garden-bar at The McKittrick Hotel, one of our favorite places in the city.</p>
 				<h1 class="info-button">
@@ -25,18 +25,18 @@
 					</a>
 				</h1>
 			</div>
-			<div class="info-item column third">
-				<div class="info-image"><img src="assets/images/clock.png"></div>
-				<h4 class="info-title">Schedule of Events</h4>
-				<p class="text">Apparently there's more to these things than I thought...</p>
+			<div class="info-item">
+				<img class="info-image" src="assets/images/hotel.png">
+				<h4 class="info-title">Accomodations</h4>
+				<p class="text">Here's all the places you can stay. Sorry NYC is ridiculous.</p>
 				<h1 class="info-button">
 					<a href="schedule.html">
 						Learn More <i class="fa fa-angle-right" aria-hidden="true"></i>
 					</a>
 				</h1>
 			</div>
-			<div class="info-item column third">
-				<div class="info-image"><img src="assets/images/gift.png"></div>
+			<div class="info-item">
+				<img class="info-image" src="assets/images/gift.png">
 				<h4 class="info-title">Registry</h4>
 				<p class="text">Love is the gift that keeps on giving, but some new kitchen gadgets ain't nothing to shake a stick at.</p>
 				<h1 class="info-button">
@@ -47,37 +47,39 @@
 			</div>
 		</section>
 		<section class="story container">
-			<div class="title column full">
+			<div class="title">
 				<h1>The Story So Far...</h1>
 			</div>
-			<div class="person column half" id="shane">
-				<h1>Shane</h1>
-				<div class="photo" id="1" data-photo-number="1">
-					<img src="assets/images/pics/shane1.png">
+			<div class="people">
+				<div class="person" id="shane">
+					<h1>Shane</h1>
+					<div class="photo" id="1" data-photo-number="1">
+						<img src="assets/images/pics/shane1.png">
+					</div>
+					<div class="photo" data-photo-number="3">
+						<img src="assets/images/pics/shane2.png">
+					</div>
+					<div class="photo" data-photo-number="5">
+						<img src="assets/images/pics/shane-3.png">
+					</div>
+					<div class="photo" data-photo-number="7">
+						<img src="assets/images/pics/shane4.png">
+					</div>
 				</div>
-				<div class="photo" data-photo-number="3">
-					<img src="assets/images/pics/shane2.png">
-				</div>
-				<div class="photo" data-photo-number="5">
-					<img src="assets/images/pics/shane-3.png">
-				</div>
-				<div class="photo" data-photo-number="7">
-					<img src="assets/images/pics/shane4.png">
-				</div>
-			</div>
-			<div class="person column half" id="steph">
-				<h1>Stephanie</h1>
-				<div class="photo" data-photo-number="2">
-					<img src="assets/images/pics/steph1.png">
-				</div>
-				<div class="photo" data-photo-number="4">
-					<img src="assets/images/pics/steph2.png">
-				</div>
-				<div class="photo" data-photo-number="6">
-					<img src="assets/images/pics/steph3.png">
-				</div>
-				<div class="photo" data-photo-number="8">
-					<img src="assets/images/pics/steph4.png">
+				<div class="person" id="steph">
+					<h1>Stephanie</h1>
+					<div class="photo" data-photo-number="2">
+						<img src="assets/images/pics/steph1.png">
+					</div>
+					<div class="photo" data-photo-number="4">
+						<img src="assets/images/pics/steph2.png">
+					</div>
+					<div class="photo" data-photo-number="6">
+						<img src="assets/images/pics/steph3.png">
+					</div>
+					<div class="photo" data-photo-number="8">
+						<img src="assets/images/pics/steph4.png">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -85,39 +87,10 @@
 			<h1 class="headline">Possibly Asked Questions</h1>
 			<ul class="faq-list">
 				<li class="faq-item faq-item-5">
-					<div class="faq-icon column third">
-						<img src="http://thehighlinehotel.com/wp-content/themes/highline/img/content/home-bg.jpg">
-					</div>
-					<div class="faq-content column two-thirds">
-						<h3 class="question">Where should I stay?</h3>
-						<p class="answer">We will be staying at The Highline Hotel and would love for you to join us, but there are a couple other options as well. You can see all the lodging options here.</p>
-					</div>
-				</li>
-				<li class="faq-item faq-item-5">
-					<div class="faq-icon column third">
-						<img src="http://placehold.it/200x200">
-					</div>
-					<div class="faq-content column two-thirds">
+					<img class="faq-icon" src="http://placehold.it/200x200">
+					<div class="faq-content">
 						<h3 class="question">What should I wear?</h3>
 						<p class="answer">Gallow Green has a vintage feel to it and so we're encouraging our guests to pull out their favorite bowtie if they want, but that being said we don't want this to become a costume party. No flapper dresses or anything like that. A formal suit or a nice cocktail dress will be just fine.</p>
-					</div>
-				</li>
-				<li class="faq-item faq-item-5">
-					<div class="faq-icon column third">
-						<img src="http://placehold.it/200x200">
-					</div>
-					<div class="faq-content column two-thirds">
-						<h3 class="question">What about this?</h3>
-						<p class="answer">Well... this.</p>
-					</div>
-				</li>
-				<li class="faq-item faq-item-5">
-					<div class="faq-icon column third">
-						<img src="http://placehold.it/200x200">
-					</div>
-					<div class="faq-content column two-thirds">
-						<h3 class="question">What about this?</h3>
-						<p class="answer">Well... this.</p>
 					</div>
 				</li>
 				<li class="faq-item faq-item-5">
