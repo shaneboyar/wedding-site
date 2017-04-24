@@ -190,11 +190,11 @@ section {
 .story .people {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .story .person {
-  height: 2250px;
+  padding: 0 9%;
 }
 
 .story .person#shane {
