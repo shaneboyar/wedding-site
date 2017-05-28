@@ -9,7 +9,7 @@ var animatePoints = function(points) {
         points[i].style.transform = "scaleX(1) translateY(0)";
         points[i].style.msTransform = "scaleX(1) translateY(0)";
         points[i].style.WebkitTransform = "scaleX(1) translateY(0)";
-    }
+    };
 
     for (var i = 0; i < points.length; i++) {
         revealPoint(i);
@@ -29,12 +29,11 @@ window.onload = function() {
 
     window.addEventListener('scroll', function(event) {
         if (document.documentElement.scrollTop || document.body.scrollTop >= scrollDistance) {
-            animatePoints(pointsArray);   
+            animatePoints(pointsArray);
         }
     });
-    
 
-    window.sr = ScrollReveal({ 
+    window.sr = ScrollReveal({
         origin: 'left',
         distance: '200%',
         rotate: { z: 10 },
@@ -49,7 +48,6 @@ window.onload = function() {
     sr.reveal('[data-photo-number="7"]', {origin: 'bottom'});
     sr.reveal('[data-photo-number="8"]', {origin: 'bottom', viewFactor: 0.8});
     sr.reveal('.faq-item-5');
-    
     smoothScroll.init();
 
-}  
+};

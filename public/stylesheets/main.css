@@ -1,0 +1,422 @@
+@font-face {
+  font-family: Brixton; src: url(/fonts/Brixton-Line-Regular.otf);
+}
+
+body {
+  font-family: 'Brixton';
+}
+
+.dark {
+  background-image: url(/images/dark_embroidery.png);
+  background-repeat: repeat;
+  background-position: center center;
+  color: #fff;
+}
+
+.light {
+  background-image: url(/images/upfeathers.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #000;
+}
+
+.headline {
+  font-family: 'Brixton';
+  z-index: 2;
+  padding: 50px 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../images/eng_pic_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  text-align: center;
+  z-index: 2;
+  font-size: 6rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 0px rgb(58,23,63);
+}
+
+.hero h3 {
+  text-align: center;
+  z-index: 2;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-shadow: 1px 2px 0px rgb(58,23,63);
+}
+
+.hero .arrow-icon {
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.hero .arrow-icon a {
+  color: white;
+  text-shadow: 4px 5px 5px rgb(21,37,23);
+}
+
+@keyframes bounce {
+  0% {-webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);}
+  50% {-webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);}
+  to {-webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);}
+}
+
+.hero .arrow-icon i{
+  animation-name: bounce;
+  animation-duration: 1.33s;
+  animation-timing-function: ease-in-out;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
+}
+
+.info {
+  min-height: 650px;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.info-item {
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: scaleX(0.9) translateY(3rem);
+  -moz-transform: scaleX(0.9) translateY(3rem);
+  transform: scaleX(0.9) translateY(3rem);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.info-item .info-image {
+  width: 250px;
+}
+
+.info-item .info-title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.info-item .text {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-item .info-button a {
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+.info-item .info-button a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.story {
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #000000;
+}
+
+.story .title h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.story .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.story .person#shane {
+  border-right: 2px dashed black;
+  padding: 0 5%;
+}
+
+.story .person#steph {
+  padding: 0 5%;
+}
+
+.story .person .photo {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.story .person .photo img {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.story .person h1 {
+  text-align: center;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: repeat;
+  color: #000000;
+}
+
+.faq .faq-list {
+  align-self: center;
+}
+
+.faq .faq-list .faq-item {
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  list-style: none;
+  height: 250px;
+  width: 750px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.faq .faq-list .faq-item .faq-icon {
+  flex-grow: 1;
+  align-self: center;
+  margin-left: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.faq .faq-list .faq-item .faq-icon img {
+  object-fit: cover;
+}
+
+.faq .faq-list .faq-item .faq-content {
+  flex-grow: 3;
+}
+
+.faq .faq-list .faq-item .faq-content .question {
+  text-align: center;
+}
+
+.faq .faq-list .faq-item .faq-content .answer {
+  margin: 0 10px;
+  font-family: 'Amatic SC';
+  font-size: 22px;
+}
+
+.rsvp {
+  background-image: url(/images/gallow-green2.jpg);
+  background-repeat: repeat;
+  background-position: center center;
+  min-height: 550px;
+  padding-top: 25px;
+}
+
+.rsvp .rsvp-form {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 760px;
+}
+
+.rsvp .rsvp-button {
+  display: none;
+}
+
+.hotel {
+  color: #001a00;
+  height: 300px;
+}
+
+.hotel .postcard-container {
+  display: flex;
+  background-color: #f0ead6;
+  margin-bottom: 2em;
+  padding: 0;
+}
+
+.hotel .postcard-container .stamp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #001a00;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hotel .image {
+  padding: 0;
+  display: flex;
+}
+
+.hotel .image img{
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  align-self: center;
+}
+
+.hotel .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hotel a {
+  color: #001a00;
+}
+
+.hotel h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #001a00  ;
+}
+
+.hotel p {
+  font-size: 18px;
+  font-family: 'Amatic SC';
+}
+
+.hotel .underline {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #001a00;
+}
+
+.footer {
+  background-image: url(/images/binding_dark.png);
+  background-repeat: repeat;
+  background-position: center center;
+  min-height: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 750px) {
+
+ /* .hero {
+    background-image: url(../assets/images/eng_pic_2.jpg);
+    background-position: center top;
+    background-size: contain;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info-item .info-title {
+    font-size: 1.5rem;
+  }*/
+
+
+  .story {
+    display: none;
+  }
+
+  .rsvp .rsvp-form {
+    display: none;
+  }
+
+  .faq {
+    display: none;
+  }
+
+  .rsvp .rsvp-button {
+    display: block;
+    font-family: 'Brixton';
+    position: absolute;
+    top: 33%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;                    /* makes sure the title inhabits the full width of its container */
+    text-align: center;             /* aligns text in the horizontal center of the element */
+    font-size: 4rem;                /* specifies the size of the font in root em units */
+    font-weight: 700;               /* makes the font thinner or lighter weight */
+    text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
+    text-shadow: 1px 1px 0px rgb(58,23,63); /* creates a shadow underneath the text for readability over the image */
+  }
+
+  .rsvp .rsvp-button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .hotel .image img{
+    border-radius: 0;
+  }
+
+  .postcard-container .stamp {
+    display: none !important;
+  }
+}
