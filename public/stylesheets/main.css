@@ -363,20 +363,11 @@ body {
 
 @media (max-width: 750px) {
 
- /* .hero {
+  .hero {
     background-image: url(../assets/images/eng_pic_2.jpg);
     background-position: center top;
     background-size: contain;
   }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .info-item .info-title {
-    font-size: 1.5rem;
-  }*/
-
 
   .story {
     display: none;
