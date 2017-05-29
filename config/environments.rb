@@ -13,4 +13,9 @@ configure :production do
    :database => db.path[1..-1],
    :encoding => 'utf8'
  )
+
+ #Configure Carrierwave
+  CarrierWave.configure do |config|
+    config.root = File.dirname(__FILE__) + "/public"
+  end
 end
