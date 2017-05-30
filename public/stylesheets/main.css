@@ -265,18 +265,13 @@ body {
 }
 
 .rsvp {
+  display: flex;
+  justify-content: center;
   background-image: url(/images/gallow-green2.jpg);
   background-repeat: repeat;
   background-position: center center;
   min-height: 550px;
   padding-top: 25px;
-}
-
-.rsvp .rsvp-form {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  width: 760px;
 }
 
 .rsvp .rsvp-button {
@@ -364,16 +359,15 @@ body {
 @media (max-width: 750px) {
 
   .hero {
-    background-image: url(../assets/images/eng_pic_2.jpg);
-    background-position: center top;
-    background-size: contain;
+    background-image: url(/images/eng_pic_2.jpg);
+    background-size: cover;
   }
 
   .story {
     display: none;
   }
 
-  .rsvp .rsvp-form {
+  .rsvp iframe {
     display: none;
   }
 
@@ -383,19 +377,13 @@ body {
 
   .rsvp .rsvp-button {
     display: block;
+    align-self: center;
     font-family: 'Brixton';
-    position: absolute;
-    top: 33%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;                    /* makes sure the title inhabits the full width of its container */
-    text-align: center;             /* aligns text in the horizontal center of the element */
-    font-size: 4rem;                /* specifies the size of the font in root em units */
-    font-weight: 700;               /* makes the font thinner or lighter weight */
-    text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
-    text-shadow: 1px 1px 0px rgb(58,23,63); /* creates a shadow underneath the text for readability over the image */
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgb(58,23,63);
   }
 
   .rsvp .rsvp-button a {
