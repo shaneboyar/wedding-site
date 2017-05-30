@@ -4,7 +4,6 @@ require 'carrierwave'
 require 'carrierwave/orm/activerecord'
 require 'fog'
 require 'sass'
-require 'dotenv/load'
 require './config/environments'
 require './models/photo'
 

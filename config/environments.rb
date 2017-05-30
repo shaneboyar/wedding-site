@@ -1,6 +1,6 @@
 configure :development do
+  require 'dotenv/load'
   set :database, 'sqlite3:db/database.db'
-
   # Configure Carrierwave
   CarrierWave.configure do |config|
     config.fog_provider = 'fog/aws'
