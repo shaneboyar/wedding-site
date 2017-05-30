@@ -1,5 +1,6 @@
 configure :development do
   set :database, 'sqlite3:db/database.db'
+  #Configure Carrierwave
 end
 
 configure :production do
@@ -13,9 +14,4 @@ configure :production do
    :database => db.path[1..-1],
    :encoding => 'utf8'
  )
-
- #Configure Carrierwave
-  CarrierWave.configure do |config|
-    config.root = "../public/images"
-  end
 end

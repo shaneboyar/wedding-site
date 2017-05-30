@@ -6,6 +6,10 @@ require 'sass'
 require './config/environments'
 require './models/photo'
 
+CarrierWave.configure do |config|
+  config.root = File.dirname(__FILE__)
+end
+
 get '/' do
   erb :index
 end
@@ -27,5 +31,5 @@ post "/photobooth" do
   #Save
   photo.save!
   #Send Success
-  '200'
+  "OK"
 end
