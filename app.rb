@@ -2,12 +2,14 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require "carrierwave"
 require "carrierwave/orm/activerecord"
+require "fog"
 require 'sass'
+require 'dotenv/load'
 require './config/environments'
 require './models/photo'
 
 CarrierWave.configure do |config|
-  config.root = File.dirname(__FILE__)
+  config.root = File.dirname(__FILE__) + "/public/images/photobooth"
 end
 
 get '/' do
