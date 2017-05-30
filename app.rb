@@ -19,7 +19,7 @@ get '/accomodations' do
 end
 
 get '/photo' do
-  @photo = Photo.first
+  @photos = Photo.all
   erb :photos
 end
 
