@@ -14,7 +14,7 @@ GEM
       tzinfo (~> 1.1)
     arel (8.0.0)
     bond (0.5.1)
-    carrierwave (1.0.0)
+    carrierwave (1.1.0)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
@@ -75,4 +75,4 @@ DEPENDENCIES
   tux
 
 BUNDLED WITH
-   1.14.6
+   1.15.0
