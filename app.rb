@@ -1,15 +1,15 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require "carrierwave"
-require "carrierwave/orm/activerecord"
-require "fog"
+require 'carrierwave'
+require 'carrierwave/orm/activerecord'
+require 'fog'
 require 'sass'
 require 'dotenv/load'
 require './config/environments'
 require './models/photo'
 
 CarrierWave.configure do |config|
-  config.root = File.dirname(__FILE__) + "/public/images/photobooth"
+  config.root = File.dirname(__FILE__) + '/public/images/photobooth'
 end
 
 get '/' do
@@ -25,13 +25,13 @@ get '/photo' do
   erb :photos
 end
 
-post "/photobooth" do
-  #Create new Image Model
+post '/photobooth' do
+  # Create new Image Model
   photo = Photo.new
-  #Save the data from the request
-  photo.file = params[:file] #carrierwave will upload the file automatically
-  #Save
+  # Save the data from the request
+  photo.file = params[:file] # carrierwave will upload the file automatically
+  # Save
   photo.save!
-  #Send Success
-  "OK"
+  # Send Success
+  'OK'
 end

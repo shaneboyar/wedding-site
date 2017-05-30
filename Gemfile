@@ -1,19 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem "activerecord"
-gem "sinatra-activerecord"
-gem "carrierwave"
-gem 'sass'
+gem 'activerecord'
+gem 'carrierwave'
+gem 'fog'
+gem 'fog-aws'
 gem 'rake'
-gem "fog-aws"
+gem 'sass'
+gem 'sinatra'
+gem 'sinatra-activerecord'
 
 group :development do
- gem 'sqlite3'
- gem "tux"
- gem 'dotenv-rails'
+  gem 'dotenv-rails'
+  gem 'sqlite3'
+  gem 'tux'
 end
 
 group :production do
- gem 'pg'
+  gem 'pg'
 end
