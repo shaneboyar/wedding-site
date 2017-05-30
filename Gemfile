@@ -8,9 +8,9 @@ gem 'rake'
 gem 'sass'
 gem 'sinatra'
 gem 'sinatra-activerecord'
+gem 'dotenv-rails'
 
 group :development do
-  gem 'dotenv-rails'
   gem 'sqlite3'
   gem 'tux'
 end
