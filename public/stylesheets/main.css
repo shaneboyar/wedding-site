@@ -360,7 +360,7 @@ body {
 
   .hero {
     background-image: url(/images/eng_pic_2.jpg);
-    background-size: cover;
+    background-attachment: scroll;
   }
 
   .story {
