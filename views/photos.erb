@@ -1,9 +1,20 @@
-<div class="container">
-  <div class="row">
-    <% @photos.all.each do |photo| %>
-      <div class="col-sm-6 col-md-4">
-        <img class="img-responsive" src="<%= photo.file.url %>">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shane &amp; Stephanie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <% @photos.all.each do |photo| %>
+          <div class="col-sm-6 col-md-4">
+            <img class="img-responsive" src="<%= photo.file.url %>">
+          </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-</div>
+    </div>
+  </body>
+</html>
