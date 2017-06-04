@@ -3,6 +3,7 @@ require 'sinatra/activerecord'
 require 'carrierwave'
 require 'carrierwave/orm/activerecord'
 require 'fog'
+require 'json'
 require 'sass'
 require './config/environments'
 require './models/photo'
@@ -19,9 +20,14 @@ get '/accomodations' do
   erb :accomodations
 end
 
-get '/photo' do
+get '/photobooth' do
   @photos = Photo.all.order(created_at: :desc)
   erb :photos
+end
+
+get '/photobooth.json' do
+  content_type :json
+  Photo.all.order(created_at: :desc).to_json
 end
 
 post '/photobooth' do

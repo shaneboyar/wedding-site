@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'activerecord'
 gem 'carrierwave'
+gem 'json'
 gem 'fog'
 gem 'fog-aws'
 gem 'rake'
