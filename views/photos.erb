@@ -23,8 +23,9 @@
       $.getJSON('/photobooth.json', function(response){
         let images_on_page = $('.img-responsive');
         let images_on_db = response;
-        if (images_on_db.length != images_on_page.length) {
+        if (images_on_db[0]['file']['url'] != images_on_page[0].src) {
           $('#images').prepend(`<div class="col-xs-6 col-md-3" style="padding: 0;"><img class='img-responsive' src=${images_on_db[0]['file']['url']}></div>`);
+          $('.img-responsive').last().remove();
         }
       });
     }, 5000);

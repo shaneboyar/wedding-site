@@ -21,7 +21,7 @@ get '/accomodations' do
 end
 
 get '/photobooth' do
-  @photos = Photo.all.order(created_at: :desc)
+  @photos = Photo.all.order(created_at: :desc).limit(16)
   erb :photos
 end
 
