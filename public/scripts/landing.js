@@ -47,6 +47,23 @@ window.onload = function() {
     sr.reveal('[data-photo-number="6"]', {origin: 'bottom', viewFactor: 0.8});
     sr.reveal('[data-photo-number="7"]', {origin: 'bottom'});
     sr.reveal('[data-photo-number="8"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="9"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="10"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="11"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="12"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="13"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="14"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="16"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="15"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="17"]', {origin: 'bottom', viewFactor: 0.8});
+    sr.reveal('[data-photo-number="18"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="19"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="20"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="21"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="22"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="23"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="24"]', {origin: 'bottom'});
+    sr.reveal('[data-photo-number="25"]', {origin: 'bottom'});
     sr.reveal('.faq-item-5');
     smoothScroll.init();
 

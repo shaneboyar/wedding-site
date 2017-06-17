@@ -211,6 +211,14 @@ body {
   margin: 0 auto;
 }
 
+.story .person#both .photo img {
+  display: block;
+  width: auto;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
 .story .person h1 {
   text-align: center;
 }
