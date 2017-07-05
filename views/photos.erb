@@ -26,7 +26,7 @@
         let images_on_db = response;
         if (images_on_db[0]['file']['url'] != images_on_page[0].src) {
           $('#images').prepend(`<div class="col-xs-6 col-md-3 no-padding"><img class='img-responsive' src=${images_on_db[0]['file']['url']}></div>`);
-          $('.img-responsive').last().remove();
+          if (images_on_page.length === 16) { $('.img-responsive').last().remove(); }
         }
       });
     }, 5000);
